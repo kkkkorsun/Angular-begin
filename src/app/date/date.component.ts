@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateComponent implements OnInit {
   visibility : boolean = true;
-  //items = ["Angular", "React", "Vue"];
-  //isCollapsed : boolean = true; 
   toggle(){
   
     this.visibility = !this.visibility;
