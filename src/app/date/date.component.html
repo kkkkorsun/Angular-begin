@@ -1,2 +1,7 @@
-<input type="text"[ngModel]="text">
-<p>{{text}}</p>
+<div [ngClass]= "{invisible: visibility}">
+    <h1 [ngStyle]= "{'color': 'red'}">Hello World</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, error.
+    </p>
+</div>
+<button (click)= "toggle()">Toggle</button>

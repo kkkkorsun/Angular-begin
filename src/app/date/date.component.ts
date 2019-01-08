@@ -6,12 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
-  text : string = "Hello world";
+  visibility : boolean = true;
   //items = ["Angular", "React", "Vue"];
   //isCollapsed : boolean = true; 
+  toggle(){
+  
+    this.visibility = !this.visibility;
+  }
   constructor() { 
 }
-  
   ngOnInit() {
   }
 
