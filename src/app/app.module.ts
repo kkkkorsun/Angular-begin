@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
 import { PriceComponent } from './price/price.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NewServiceService } from './new-service.service';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent}, 
@@ -36,7 +37,7 @@ const appRoutes: Routes = [
     FormsModule, 
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [NewServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
